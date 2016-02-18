@@ -13,15 +13,17 @@
     function createElements() {
         MyElement = Polymer({
             is: "my-element",
-            created: function() {
-                this.textContent = "My element!";
+            factoryImpl: function(foo, bar) {
+                this.foo = foo;
+                this.configureWith(bar);
+            },
+            configureWith: function(bar) {
+                this.textContent = bar;
             }
         });
 
-        var createdElement = document.createElement("my-element");
-        var constructedElement = new MyElement();
-        document.body.appendChild(createdElement);
-        document.body.appendChild(constructedElement);
+        var element = new MyElement(42, "octopus");
+        document.body.appendChild(element);
     }
 </script>
 </body>
