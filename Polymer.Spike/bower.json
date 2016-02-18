@@ -1,0 +1,23 @@
+{
+  "name": "Polymer.Spike",
+  "authors": [
+    "Suui <suui.gd@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.4",
+    "iron-elements": "PolymerElements/iron-elements#^1.0.8",
+    "paper-elements": "PolymerElements/paper-elements#^1.0.7"
+  }
+}
