@@ -1,0 +1,13 @@
+*.suo
+*.sdf
+*.opensdf
+*.opendb
+*.user
+
+bin
+.vs
+Debug
+Release
+
+packages
+bower_components
