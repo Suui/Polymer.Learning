@@ -8,6 +8,8 @@ namespace Polymer.Spike
 		public HomeModule()
 		{
 			Get["/"] = _ => View["index"];
+
+			Get["/registration-and-lifecycle"] = _ => View["registration-and-lifecycle"];
 		}
 	}
 }

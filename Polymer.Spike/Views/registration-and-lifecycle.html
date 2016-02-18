@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration and Lifecycle</title>
+    <meta charset="utf-8"/>
+    <script src="@Path['bower/webcomponentsjs/webcomponents-lite.min.js']"></script>
+    <link rel="import" href="@Path['bower/polymer/polymer.html']"/>
+</head>
+
+<body onload="createElements()">
+
+<script type="text/javascript">
+    function createElements() {
+        MyElement = Polymer({
+            is: "my-element",
+            created: function() {
+                this.textContent = "My element!";
+            }
+        });
+
+        var createdElement = document.createElement("my-element");
+        var constructedElement = new MyElement();
+        document.body.appendChild(createdElement);
+        document.body.appendChild(constructedElement);
+    }
+</script>
+</body>
+
+</html>

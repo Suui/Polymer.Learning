@@ -63,6 +63,7 @@
     <Content Include="Content\polymer_elements\picture-frame.html" />
     <Content Include="icon.png" />
     <Content Include="Views\index.html" />
+    <Content Include="Views\registration-and-lifecycle.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
