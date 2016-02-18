@@ -8,8 +8,14 @@
     <link rel="import" href="@Path['Content/polymer_elements/name-tag.html']"/>
     <link rel="import" href="@Path['Content/polymer_elements/configurable-name-tag.html']"/>
     <link rel="import" href="@Path['Content/polymer_elements/editable-name-tag.html']"/>
+    <link rel="import" href="@Path['Content/polymer_elements/log-in.html']"/>
+
     <link rel="import" href="@Path['bower/paper-scroll-header-panel/paper-scroll-header-panel.html']"/>
     <link rel="import" href="@Path['bower/paper-toolbar/paper-toolbar.html']"/>
+    <link rel="import" href="@Path['bower/iron-form/iron-form.html']"/>
+    <link rel="import" href="@Path['bower/paper-input/paper-input.html']"/>
+    <link rel="import" href="@Path['bower/paper-input-container/paper-input-container.html']"/>
+    <link rel="import" href="@Path['bower/gold-email-input/gold-email-input.html']"/>
     <title></title>
 </head>
 <body class="fullbleed layout vertical">
@@ -34,5 +40,20 @@
 <br/>
 
 <editable-name-tag></editable-name-tag>
-</bodyclass="fullbleed>
+<br/>
+
+<form is="iron-form" id="form" method="post">
+    <paper-input name="name" label="Name"></paper-input>
+    <gold-email-input required="" auto-validate="">
+        <paper-input-container></paper-input-container>
+    </gold-email-input>
+</form>
+<br/>
+<br/>
+
+
+<log-in></log-in>    
+
+
+</body>
 </html>

@@ -61,6 +61,7 @@
     <Content Include="Content\polymer_elements\hello-world.html" />
     <Content Include="Content\polymer_elements\name-tag.html" />
     <Content Include="Content\polymer_elements\picture-frame.html" />
+    <Content Include="Content\polymer_elements\log-in.html" />
     <Content Include="icon.png" />
     <Content Include="Views\index.html" />
     <Content Include="Views\registration-and-lifecycle.html" />
