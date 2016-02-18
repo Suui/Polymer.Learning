@@ -7,30 +7,23 @@
     <link rel="import" href="@Path['bower/polymer/polymer.html']"/>
 </head>
 
-<body onload="createElements()">
-
-<input is="my-input"/>
-<br/><br/>
-
-<script type="text/javascript">
-    function createElements() {
-        MyInput = Polymer({
-            is: "my-input",
-            extends: "input",
-            created: function() {
-                this.style.border = "1px solid red";
-            }
+<body>
+<dom-module id="main-document-element">
+    <template>
+        <p>
+            Hi! I'm a Polymer element that was defined in the main document!
+        </p>
+    </template>
+    <script>
+        HTMLImports.whenReady(function() {
+            Polymer({
+                is: "main-document-element"
+            });
         });
+    </script>
+</dom-module>
 
-        var constructedElement = new MyInput();
-        console.log(constructedElement instanceof HTMLInputElement);
-        document.body.appendChild(constructedElement);
-
-        var createdElement = document.createElement("input", "my-input");
-        console.log(createdElement instanceof HTMLInputElement);
-        document.body.appendChild(createdElement);
-    }
-</script>
+<main-document-element></main-document-element>
 </body>
 
 </html>
